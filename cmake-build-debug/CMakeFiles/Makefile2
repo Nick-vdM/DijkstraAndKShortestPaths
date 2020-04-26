@@ -54,11 +54,13 @@ CMAKE_BINARY_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trim
 
 # The main recursive "all" target.
 all: CMakeFiles/3_graphs.dir/all
+all: CMakeFiles/yan-qi.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/3_graphs.dir/clean
+clean: CMakeFiles/yan-qi.dir/clean
 
 .PHONY : clean
 
@@ -93,6 +95,33 @@ CMakeFiles/3_graphs.dir/rule: cmake_check_build_system
 CMakeFiles/3_graphs.dir/clean:
 	$(MAKE) -f CMakeFiles/3_graphs.dir/build.make CMakeFiles/3_graphs.dir/clean
 .PHONY : CMakeFiles/3_graphs.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/yan-qi.dir
+
+# All Build rule for target.
+CMakeFiles/yan-qi.dir/all:
+	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/depend
+	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=3,4,5,6,7 "Built target yan-qi"
+.PHONY : CMakeFiles/yan-qi.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/yan-qi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/yan-qi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/yan-qi.dir/rule
+
+# Convenience name for target.
+yan-qi: CMakeFiles/yan-qi.dir/rule
+
+.PHONY : yan-qi
+
+# clean rule for target.
+CMakeFiles/yan-qi.dir/clean:
+	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/clean
+.PHONY : CMakeFiles/yan-qi.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

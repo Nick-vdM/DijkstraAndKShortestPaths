@@ -10,11 +10,6 @@
 
 using namespace std;
 
-struct Graph {
-    map<pair<int, int>, double> edges;
-    unordered_map<int, vector<int>> connectionLookup;
-};
-
 struct Path {
     unordered_set<int> visitedNodes{};
     int currentNode{0};
@@ -29,18 +24,32 @@ struct Path {
     }
 };
 
-struct greatestPath{
-    bool operator()(const Path & p1, const Path & p2){
+struct greatestPath {
+    bool operator()(const Path &p1, const Path &p2) {
         return p1.length > p2.length;
     }
 };
 
 template<class A, class B>
-struct greatestSecondPairValue {
-    bool operator()(const pair<A, B> & p1, const pair<A, B> & p2) {
+struct shortestPathComparator {
+    bool operator()(const pair<A, B> &p1, const pair<A, B> &p2) {
         return p1.second > p2.second;
     }
 };
+
+/*
+struct shortestPathComparator {
+public:
+    explicit shortestPathComparator(vector<double *> &lengths) : lengths{lengths} {}
+
+    bool operator()(int &node1, int &node2) {
+        return *lengths[node1] > *lengths[node2];
+    }
+
+private:
+    vector<double *> lengths;
+};
+ */
 
 class Searcher {
 public:
@@ -50,57 +59,62 @@ public:
         ifstream ifs(filePath);
         ifs >> numberOfNodes >> numberOfEdges;
 
+        graph.reserve(numberOfNodes);
+        for (int i = 0; i < numberOfNodes; i++) {
+            graph.emplace_back(numberOfNodes, numeric_limits<double>::max());
+            connectionLookup.emplace_back();
+        }
+
         // Load in graph information
         for (int i = 0; i < numberOfEdges; i++) {
             int from, to;
             double length;
             ifs >> from >> to >> length;
-            graph.edges[pair<int, int>{from, to}] = length;
-
-            auto it = graph.connectionLookup.find(from);
-
-            if (it == graph.connectionLookup.end()) {
-                graph.connectionLookup[from] = vector<int>{to};
-            } else {
-                // append it to the values
-                it->second.push_back(to);
-            }
+            graph[from][to] = length;
+            connectionLookup[from].push_back(to);
         }
         // Grab the source and goal
         ifs >> source >> goal >> K;
     }
 
-    vector<double> plainDijkstra() {
+    double dijkstra() {
         // just finds a single path
         auto startTime = chrono::high_resolution_clock::now();
+        /*
+        vector<double*> lengths;
+        lengths.reserve(graph.size());
+        for(int i = 0; i < graph.size(); i++){
+            lengths.push_back(new double(numeric_limits<double>::max()));
+        }
+        shortestPathComparator comparator{lengths};
+         */
 
         priority_queue<pair<int, double>,
                 vector<pair<int, double>>,
-                greatestSecondPairValue<int, double>> pQueue{};
-        pQueue.push(pair<int, double>{0, 0});
-        unordered_set<int> explored;
-        vector<double> pathValues;
-        int pushed = 0;
+                shortestPathComparator<int, double>> pQueue{};
+        pQueue.push(pair<int, double>{source, 0});
+        vector<int> nodeBefore(graph.size(), -1);
+        double bestPathLength{0};
         while (!pQueue.empty()) {
             auto topPath = pQueue.top();
             pQueue.pop();
-            if (topPath.first == goal) {
-                pathValues.push_back(topPath.second);
-                if (pathValues.size() == 1) break; // enough paths were found
-            } else
-                for (auto vertex : graph.connectionLookup[topPath.first]) {
-                    if (explored.find(vertex) !=
-                        explored.end()) {
-                        // if its already been explored, skip it
-                        continue;
-                    }
-                    explored.insert(vertex);
 
-                    double newLength = topPath.second + graph.edges[pair<int,
-                            int>{topPath.first, vertex}];
-                    pQueue.push(pair<int, double>{vertex, newLength});
-                    pushed++;
+            for (auto vertex : connectionLookup[topPath.first]) {
+                if (nodeBefore[vertex] != -1) {
+                    // if its already been explored, skip it
+                    continue;
                 }
+                nodeBefore[vertex] = topPath.first;
+
+                double newLength = topPath.second +
+                                   graph[topPath.first][vertex];
+
+                if (vertex == goal) {
+                    bestPathLength = newLength;
+                    break;
+                }
+                pQueue.push(pair<int, double>{vertex, newLength});
+            }
         }
 
         auto endTime = chrono::high_resolution_clock::now();
@@ -108,59 +122,35 @@ public:
                 chrono::duration_cast<chrono::microseconds>
                         (endTime - startTime).count();
         cout << "Took " << fixed << processTime / 1000000
-             << " seconds to find and " << pushed << " push operations"
+             << " seconds to find"
              << endl;
-        return pathValues;
+//        printPathTaken(nodeBefore);
+        return bestPathLength;
     }
 
-    vector<double> DijkstraKSP() {
-        // This approach doesn't work and is gonna get canned
-        auto startTime = chrono::high_resolution_clock::now();
-
-        priority_queue<Path, vector<Path>, greatestPath> pQueue;
-
-        Path beginning{};
-        beginning.copyAndAppend(0, 0);
-        pQueue.push(beginning);
-        int pushed = 0;
-
-        vector<double> pathValues;
-        while (!pQueue.empty()) {
-            auto topPath = pQueue.top();
-            pQueue.pop();
-            cout << topPath.length << "\t" << topPath.visitedNodes.size()
-                 << "\t" << pushed << " " << pQueue.size() << endl;
-
-            if (topPath.currentNode == goal) {
-                pathValues.push_back(topPath.length);
-                if (pathValues.size() == K) break; // enough paths were found
-            } else
-                for (auto vertex : graph.connectionLookup[topPath.currentNode]) {
-                    if (topPath.visitedNodes.find(vertex) !=
-                        topPath.visitedNodes.end()) {
-                        // if its already been found, skip it
-                        continue;
-                    }
-
-                    double newLength = topPath.length + graph.edges[pair<int,
-                            int>{topPath.currentNode, vertex}];
-                    pQueue.push(topPath.copyAndAppend(vertex, newLength));
-                    pushed++;
-                }
+    void printPathTaken(vector<int> &pathMap) {
+        int currentNode = goal;
+        vector<int> pathTaken{goal};
+        while (currentNode != source) {
+            currentNode = pathMap[currentNode];
+            pathTaken.push_back(currentNode);
         }
-
-        auto endTime = chrono::high_resolution_clock::now();
-        double processTime =
-                chrono::duration_cast<chrono::microseconds>
-                        (endTime - startTime).count();
-        cout << "Took " << fixed << processTime / 1000000
-             << " seconds to find "
-             << endl;
-        return pathValues;
-    };
+        for (int i = pathTaken.size() - 1; i >= 0; i--) {
+            cout << pathTaken[i] << " ";
+        }
+        cout << endl;
+        double length = 0;
+        for (int i = pathTaken.size() - 1; i > 0; i--) {
+            length += graph[pathTaken[i]][pathTaken[i - 1]];
+            cout << "From " << pathTaken[i] << " to " << pathTaken[i - 1]
+                 << " = " << graph[pathTaken[i]][pathTaken[i - 1]]
+                 << "\t Total = " << length << endl;
+        }
+    }
 
 private:
-    Graph graph;
+    vector<vector<double>> graph;
+    vector<vector<int>> connectionLookup;
     int source, goal, K;
 };
 
@@ -173,14 +163,11 @@ int main(int argc, char *argv[]) {
              << endl;
     }
     Searcher s{argv[1]};
-    auto result = s.plainDijkstra();
-    for (auto v : result) {
-        cout << v << " ";
-    }
-    result = s.DijkstraKSP();
-    for (auto v : result) {
-        cout << v << " ";
-    }
-    cout << endl;
+    auto result = s.dijkstra();
+    cout << result << endl;
+//    auto results = s.DijkstraKSP();
+//    for(auto r : results){
+//        cout << r << " ";
+//    }
     return 0;
 }

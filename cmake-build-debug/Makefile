@@ -124,125 +124,17 @@ depend:
 .PHONY : 3_graphs/fast
 
 #=============================================================================
-# Target rules for targets named yan-qi
+# Target rules for targets named playground
 
 # Build rule for target.
-yan-qi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 yan-qi
-.PHONY : yan-qi
+playground: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playground
+.PHONY : playground
 
 # fast build rule for target.
-yan-qi/fast:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/build
-.PHONY : yan-qi/fast
-
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.o: k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.o
-
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.o
-
-# target to build an object file
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.o:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.o
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.o
-
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.i: k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.i
-
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.i
-
-# target to preprocess a source file
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.i:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.i
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.i
-
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.s: k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.s
-
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.s
-
-# target to generate assembly for a file
-k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.s:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.s
-.PHONY : k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.cpp.s
-
-k-shortest-paths-cpp-version/src/Graph.o: k-shortest-paths-cpp-version/src/Graph.cpp.o
-
-.PHONY : k-shortest-paths-cpp-version/src/Graph.o
-
-# target to build an object file
-k-shortest-paths-cpp-version/src/Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/Graph.cpp.o
-.PHONY : k-shortest-paths-cpp-version/src/Graph.cpp.o
-
-k-shortest-paths-cpp-version/src/Graph.i: k-shortest-paths-cpp-version/src/Graph.cpp.i
-
-.PHONY : k-shortest-paths-cpp-version/src/Graph.i
-
-# target to preprocess a source file
-k-shortest-paths-cpp-version/src/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/Graph.cpp.i
-.PHONY : k-shortest-paths-cpp-version/src/Graph.cpp.i
-
-k-shortest-paths-cpp-version/src/Graph.s: k-shortest-paths-cpp-version/src/Graph.cpp.s
-
-.PHONY : k-shortest-paths-cpp-version/src/Graph.s
-
-# target to generate assembly for a file
-k-shortest-paths-cpp-version/src/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/Graph.cpp.s
-.PHONY : k-shortest-paths-cpp-version/src/Graph.cpp.s
-
-k-shortest-paths-cpp-version/src/MainP.o: k-shortest-paths-cpp-version/src/MainP.cpp.o
-
-.PHONY : k-shortest-paths-cpp-version/src/MainP.o
-
-# target to build an object file
-k-shortest-paths-cpp-version/src/MainP.cpp.o:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/MainP.cpp.o
-.PHONY : k-shortest-paths-cpp-version/src/MainP.cpp.o
-
-k-shortest-paths-cpp-version/src/MainP.i: k-shortest-paths-cpp-version/src/MainP.cpp.i
-
-.PHONY : k-shortest-paths-cpp-version/src/MainP.i
-
-# target to preprocess a source file
-k-shortest-paths-cpp-version/src/MainP.cpp.i:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/MainP.cpp.i
-.PHONY : k-shortest-paths-cpp-version/src/MainP.cpp.i
-
-k-shortest-paths-cpp-version/src/MainP.s: k-shortest-paths-cpp-version/src/MainP.cpp.s
-
-.PHONY : k-shortest-paths-cpp-version/src/MainP.s
-
-# target to generate assembly for a file
-k-shortest-paths-cpp-version/src/MainP.cpp.s:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/MainP.cpp.s
-.PHONY : k-shortest-paths-cpp-version/src/MainP.cpp.s
-
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.o: k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.o
-
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.o
-
-# target to build an object file
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.o:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.o
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.o
-
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.i: k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.i
-
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.i
-
-# target to preprocess a source file
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.i:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.i
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.i
-
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.s: k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.s
-
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.s
-
-# target to generate assembly for a file
-k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.s:
-	$(MAKE) -f CMakeFiles/yan-qi.dir/build.make CMakeFiles/yan-qi.dir/k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.s
-.PHONY : k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.cpp.s
+playground/fast:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+.PHONY : playground/fast
 
 main.o: main.cpp.o
 
@@ -271,6 +163,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/3_graphs.dir/build.make CMakeFiles/3_graphs.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+playground.o: playground.cpp.o
+
+.PHONY : playground.o
+
+# target to build an object file
+playground.cpp.o:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.o
+.PHONY : playground.cpp.o
+
+playground.i: playground.cpp.i
+
+.PHONY : playground.i
+
+# target to preprocess a source file
+playground.cpp.i:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.i
+.PHONY : playground.cpp.i
+
+playground.s: playground.cpp.s
+
+.PHONY : playground.s
+
+# target to generate assembly for a file
+playground.cpp.s:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/playground.cpp.s
+.PHONY : playground.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -280,22 +199,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 3_graphs"
-	@echo "... yan-qi"
-	@echo "... k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.o"
-	@echo "... k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.i"
-	@echo "... k-shortest-paths-cpp-version/src/DijkstraShortestPathAlg.s"
-	@echo "... k-shortest-paths-cpp-version/src/Graph.o"
-	@echo "... k-shortest-paths-cpp-version/src/Graph.i"
-	@echo "... k-shortest-paths-cpp-version/src/Graph.s"
-	@echo "... k-shortest-paths-cpp-version/src/MainP.o"
-	@echo "... k-shortest-paths-cpp-version/src/MainP.i"
-	@echo "... k-shortest-paths-cpp-version/src/MainP.s"
-	@echo "... k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.o"
-	@echo "... k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.i"
-	@echo "... k-shortest-paths-cpp-version/src/YenTopKShortestPathsAlg.s"
+	@echo "... playground"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... playground.o"
+	@echo "... playground.i"
+	@echo "... playground.s"
 .PHONY : help
 
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nick/cmake-3.15.3-Linux-x86_64/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/nicol/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/nick/cmake-3.15.3-Linux-x86_64/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/nicol/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs"
+CMAKE_SOURCE_DIR = "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/3_graphs.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/3_graphs.dir/flags.make
 
 CMakeFiles/3_graphs.dir/main.cpp.o: CMakeFiles/3_graphs.dir/flags.make
 CMakeFiles/3_graphs.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/3_graphs.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3_graphs.dir/main.cpp.o -c "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/3_graphs.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/3_graphs.dir/main.cpp.o -c "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp"
 
 CMakeFiles/3_graphs.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/3_graphs.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp" > CMakeFiles/3_graphs.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp" > CMakeFiles/3_graphs.dir/main.cpp.i
 
 CMakeFiles/3_graphs.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/3_graphs.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp" -o CMakeFiles/3_graphs.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp" -o CMakeFiles/3_graphs.dir/main.cpp.s
 
 # Object files for target 3_graphs
 3_graphs_OBJECTS = \
@@ -77,14 +77,14 @@ CMakeFiles/3_graphs.dir/main.cpp.s: cmake_force
 # External object files for target 3_graphs
 3_graphs_EXTERNAL_OBJECTS =
 
-3_graphs: CMakeFiles/3_graphs.dir/main.cpp.o
-3_graphs: CMakeFiles/3_graphs.dir/build.make
-3_graphs: CMakeFiles/3_graphs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 3_graphs"
+3_graphs.exe: CMakeFiles/3_graphs.dir/main.cpp.o
+3_graphs.exe: CMakeFiles/3_graphs.dir/build.make
+3_graphs.exe: CMakeFiles/3_graphs.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable 3_graphs.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/3_graphs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/3_graphs.dir/build: 3_graphs
+CMakeFiles/3_graphs.dir/build: 3_graphs.exe
 
 .PHONY : CMakeFiles/3_graphs.dir/build
 
@@ -93,6 +93,6 @@ CMakeFiles/3_graphs.dir/clean:
 .PHONY : CMakeFiles/3_graphs.dir/clean
 
 CMakeFiles/3_graphs.dir/depend:
-	cd "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs" "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs" "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles/3_graphs.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs" "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs" "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug" "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles/3_graphs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/3_graphs.dir/depend
 

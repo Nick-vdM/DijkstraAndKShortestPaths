@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/3_graphs.dir/main.cpp.o  -o 3_graphs 
+/usr/bin/c++.exe  -O3 -g  -Wl,--enable-auto-import CMakeFiles/3_graphs.dir/main.cpp.o  -o 3_graphs.exe -Wl,--out-implib,lib3_graphs.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

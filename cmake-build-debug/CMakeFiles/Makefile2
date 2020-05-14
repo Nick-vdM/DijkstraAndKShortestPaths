@@ -35,19 +35,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nick/cmake-3.15.3-Linux-x86_64/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/nicol/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /home/nick/cmake-3.15.3-Linux-x86_64/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/nicol/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs"
+CMAKE_SOURCE_DIR = "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -78,14 +78,14 @@ preinstall:
 CMakeFiles/playground.dir/all:
 	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/depend
 	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target playground"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target playground"
 .PHONY : CMakeFiles/playground.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/playground.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playground.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/playground.dir/rule
 
 # Convenience name for target.
@@ -105,14 +105,14 @@ CMakeFiles/playground.dir/clean:
 CMakeFiles/3_graphs.dir/all:
 	$(MAKE) -f CMakeFiles/3_graphs.dir/build.make CMakeFiles/3_graphs.dir/depend
 	$(MAKE) -f CMakeFiles/3_graphs.dir/build.make CMakeFiles/3_graphs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 3_graphs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target 3_graphs"
 .PHONY : CMakeFiles/3_graphs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/3_graphs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3_graphs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/3_graphs.dir/rule
 
 # Convenience name for target.
@@ -132,14 +132,14 @@ CMakeFiles/3_graphs.dir/clean:
 CMakeFiles/real_3graphs.dir/all:
 	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/depend
 	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target real_3graphs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target real_3graphs"
 .PHONY : CMakeFiles/real_3graphs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/real_3graphs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/real_3graphs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/real_3graphs.dir/rule
 
 # Convenience name for target.

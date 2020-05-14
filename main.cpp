@@ -19,6 +19,14 @@ struct PathToGoal {
     vector<int> route;
     long double length{0};
 
+    static void printPathTaken(PathToGoal path) {
+        /// Useful for debugging
+        for (int i = path.route.size() - 1; i >= 0; i--) {
+            cout << path.route[i] << " ";
+        }
+        cout << endl;
+    }
+
     PathToGoal operator+=(PathToGoal const &rhs) {
         /// Note: Only adds the path to the end of the +=
         /// if the last node is equal to the first node in the
@@ -201,11 +209,9 @@ public:
                     // if its a banned node this path is no longer valid
                     valid = false;
                 }
-                // since our length won't actually be the optimal length we
-                // have to add the distance from the first node to the
-                // second node
             }
         }
+        if(!valid) path.length = DBL_MAX;
         return path;
     }
 
@@ -316,7 +322,7 @@ public:
         cout << "Took " << timeSince(startTime) << " seconds" << endl;
         for (auto &p : confirmedPaths) {
             cout << "K-" << ++k << ":\t" << setprecision(20) << p.length << endl;
-//            if (k >= 10) break; // option to only print top k if wanted
+            if (k >= 10) break; // option to only print top k if wanted
         }
         return confirmedPaths;
     }
@@ -428,9 +434,9 @@ int main(int argc, char *argv[]) {
              << endl;
     }
     Searcher s{argv[1]};
-    cout << "-----------------True values-----------------------" << endl;
+    cout << "--------Sequential Search------------" << endl;
     s.yen();
-    cout << "----------------Approximation-----------------------" << endl;
+    cout << "---Randomised sqrt(pathSize) search---" << endl;
     s.yenApproximation();
     return 0;
 }

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "3_graphs"
+  "3_graphs.exe"
   "3_graphs.pdb"
   "CMakeFiles/3_graphs.dir/main.cpp.o"
+  "lib3_graphs.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named playground
+
+# Build rule for target.
+playground: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playground
+.PHONY : playground
+
+# fast build rule for target.
+playground/fast:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+.PHONY : playground/fast
+
+#=============================================================================
 # Target rules for targets named 3_graphs
 
 # Build rule for target.
@@ -124,17 +137,17 @@ depend:
 .PHONY : 3_graphs/fast
 
 #=============================================================================
-# Target rules for targets named playground
+# Target rules for targets named real_3graphs
 
 # Build rule for target.
-playground: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 playground
-.PHONY : playground
+real_3graphs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 real_3graphs
+.PHONY : real_3graphs
 
 # fast build rule for target.
-playground/fast:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
-.PHONY : playground/fast
+real_3graphs/fast:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/build
+.PHONY : real_3graphs/fast
 
 main.o: main.cpp.o
 
@@ -162,6 +175,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/3_graphs.dir/build.make CMakeFiles/3_graphs.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+main2.o: main2.cpp.o
+
+.PHONY : main2.o
+
+# target to build an object file
+main2.cpp.o:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/main2.cpp.o
+.PHONY : main2.cpp.o
+
+main2.i: main2.cpp.i
+
+.PHONY : main2.i
+
+# target to preprocess a source file
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/main2.cpp.i
+.PHONY : main2.cpp.i
+
+main2.s: main2.cpp.s
+
+.PHONY : main2.s
+
+# target to generate assembly for a file
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/main2.cpp.s
+.PHONY : main2.cpp.s
 
 playground.o: playground.cpp.o
 
@@ -198,11 +238,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... 3_graphs"
 	@echo "... playground"
+	@echo "... 3_graphs"
+	@echo "... real_3graphs"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
 	@echo "... playground.o"
 	@echo "... playground.i"
 	@echo "... playground.s"

@@ -37,52 +37,6 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="3_graphs">
-				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/3_graphs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_graphs"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="3_graphs/fast">
-				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/3_graphs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_graphs/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="playground">
 				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/playground" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
@@ -129,9 +83,104 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="3_graphs">
+				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/3_graphs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_graphs"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="3_graphs/fast">
+				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/3_graphs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 3_graphs/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="real_3graphs">
+				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/real_3graphs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 real_3graphs"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="real_3graphs/fast">
+				<Option output="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/real_3graphs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 real_3graphs/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/e/OneDrive\ -\ Griffith\ University/Second\ Year/First\ Trimester/2801ICT\ -\ Computing\ Algorithms/assignments/3_graphs/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main.cpp">
 			<Option target="3_graphs"/>
+		</Unit>
+		<Unit filename="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/main2.cpp">
+			<Option target="real_3graphs"/>
 		</Unit>
 		<Unit filename="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/playground.cpp">
 			<Option target="playground"/>

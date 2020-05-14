@@ -19,6 +19,14 @@ struct PathToGoal {
     vector<int> route;
     long double length{0};
 
+    static void printPathTaken(PathToGoal path) {
+        /// Useful for debugging
+        for (int i = path.route.size() - 1; i >= 0; i--) {
+            cout << path.route[i] << " ";
+        }
+        cout << endl;
+    }
+
     PathToGoal operator+=(PathToGoal const &rhs) {
         /// Note: Only adds the path to the end of the +=
         /// if the last node is equal to the first node in the

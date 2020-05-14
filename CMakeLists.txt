@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -O3")
 
 add_executable(3_graphs main.cpp)
+add_executable(real_3graphs main2.cpp)
 add_executable(playground playground.cpp)

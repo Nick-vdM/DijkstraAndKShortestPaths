@@ -53,14 +53,16 @@ CMAKE_BINARY_DIR = "/mnt/e/OneDrive - Griffith University/Second Year/First Trim
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/3_graphs.dir/all
 all: CMakeFiles/playground.dir/all
+all: CMakeFiles/3_graphs.dir/all
+all: CMakeFiles/real_3graphs.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/3_graphs.dir/clean
 clean: CMakeFiles/playground.dir/clean
+clean: CMakeFiles/3_graphs.dir/clean
+clean: CMakeFiles/real_3graphs.dir/clean
 
 .PHONY : clean
 
@@ -68,6 +70,33 @@ clean: CMakeFiles/playground.dir/clean
 preinstall:
 
 .PHONY : preinstall
+
+#=============================================================================
+# Target rules for target CMakeFiles/playground.dir
+
+# All Build rule for target.
+CMakeFiles/playground.dir/all:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/depend
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target playground"
+.PHONY : CMakeFiles/playground.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/playground.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playground.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/playground.dir/rule
+
+# Convenience name for target.
+playground: CMakeFiles/playground.dir/rule
+
+.PHONY : playground
+
+# clean rule for target.
+CMakeFiles/playground.dir/clean:
+	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/clean
+.PHONY : CMakeFiles/playground.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/3_graphs.dir
@@ -97,31 +126,31 @@ CMakeFiles/3_graphs.dir/clean:
 .PHONY : CMakeFiles/3_graphs.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/playground.dir
+# Target rules for target CMakeFiles/real_3graphs.dir
 
 # All Build rule for target.
-CMakeFiles/playground.dir/all:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/depend
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=3,4 "Built target playground"
-.PHONY : CMakeFiles/playground.dir/all
+CMakeFiles/real_3graphs.dir/all:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/depend
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" --progress-num=5,6 "Built target real_3graphs"
+.PHONY : CMakeFiles/real_3graphs.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/playground.dir/rule: cmake_check_build_system
+CMakeFiles/real_3graphs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/playground.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/real_3graphs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/e/OneDrive - Griffith University/Second Year/First Trimester/2801ICT - Computing Algorithms/assignments/3_graphs/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/playground.dir/rule
+.PHONY : CMakeFiles/real_3graphs.dir/rule
 
 # Convenience name for target.
-playground: CMakeFiles/playground.dir/rule
+real_3graphs: CMakeFiles/real_3graphs.dir/rule
 
-.PHONY : playground
+.PHONY : real_3graphs
 
 # clean rule for target.
-CMakeFiles/playground.dir/clean:
-	$(MAKE) -f CMakeFiles/playground.dir/build.make CMakeFiles/playground.dir/clean
-.PHONY : CMakeFiles/playground.dir/clean
+CMakeFiles/real_3graphs.dir/clean:
+	$(MAKE) -f CMakeFiles/real_3graphs.dir/build.make CMakeFiles/real_3graphs.dir/clean
+.PHONY : CMakeFiles/real_3graphs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
